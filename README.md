@@ -1,4 +1,4 @@
-## 🚀 Sathoru - Dotfiles
+## 🚀 Jyndev - Dotfiles
 
 En este repositorio se comparten al publico en general todos los scripts y archivos de configuracion de mi actual sistema operativo, tener en cuenta que apenas se esta iniciando en estos y puede que su instalacion sea un poco confusa en general.
 
