@@ -7,12 +7,12 @@ metadata=$(printf "$artist - $title")
 if [ $url == "No player found" ]
 then
   exit
-elif [ -f /home/sathoru/.cache/albumart/"$metadata".png ]
+elif [ -f ~/.cache/albumart/"$metadata".png ]
 then
-  echo /home/sathoru/.cache/albumart/"$metadata".png
+  echo ~/.cache/albumart/"$metadata".png
 else
-  curl -s $url -o /home/sathoru/.cache/albumart/"$metadata"
-  magick /home/sathoru/.cache/albumart/"$metadata" /home/sathoru/.cache/albumart/"$metadata".png
-  rm /home/sathoru/.cache/albumart/"$metadata"
-  echo /home/sathoru/.cache/albumart/"$metadata".png
+  curl -s $url -o ~/.cache/albumart/"$metadata"
+  magick ~/.cache/albumart/"$metadata" /home/jyndev/.cache/albumart/"$metadata".png
+  rm ~/.cache/albumart/"$metadata"
+  echo ~/.cache/albumart/"$metadata".png
 fi

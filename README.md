@@ -1,53 +1,81 @@
-## 🚀 Jyndev - Dotfiles
+<a href="https://aimeos.org/">
+    <img src="assets/jynprofile.png" alt="Aimeos logo" title="JynDev" align="right" height="60" />
+</a>
 
-En este repositorio se comparten al publico en general todos los scripts y archivos de configuracion de mi actual sistema operativo, tener en cuenta que apenas se esta iniciando en estos y puede que su instalacion sea un poco confusa en general.
+# JynDev - Dotfiles 🚀
 
+<div align="center">
+
+<a href="https://gowebly.org" target="_blank" title="Logo hyprland"><img alt="logo hyprland" src="https://raw.githubusercontent.com/hyprwm/Hyprland/main/assets/header.svg"></a>
+
+<a name="readme-top"></a>
+
+# Mi configuración disponible para todos 👨🏻‍💻​🛠️​
+
+En este repositorio se ponen a disposición del público en general todos los scripts y archivos de configuración de mi sistema operativo actual. Ten en cuenta que estoy comenzando en este tema, por lo que la instalación podría resultar un poco confusa.
+
+**&searr;&nbsp;&nbsp;Sigueme en mis redes sociales;&nbsp;&swarr;**
+[![Share on TikTok][image_tiktok]][link_tiktok]
+
+<a href="https://gowebly.org" target="_blank" title="Go to the Gowebly CLI website"><img width="99%" alt="gowebly create command" src="https://raw.githubusercontent.com/gowebly/.github/main/images/gowebly_create.gif"></a>
 
 ## 🖼️ Resultados
+</div>
 
 🌟 **Escritorio**
-![Escritorio](https://raw.githubusercontent.com/sathoru-dev/dotfiles/refs/heads/main/assets/desktop.png?raw=true)
+<div align="center">
+<img src="assets/dk.png" width="45%"></img> <img src="assets/dk1.png" width="45%"></img> 
+</div>
+
 
 🌠 **Explorador de archivos (Nemo)**
-![Explorador](https://github.com/sathoru-dev/dotfiles/blob/main/assets/files.png?raw=true)
-
-⭐ **Navegador (Firefox)**
-![Navegador](https://github.com/sathoru-dev/dotfiles/blob/main/assets/firefox.png?raw=true)
+<div align="center">
+<img src="assets/file_explorer.png" width="45%"></img> <img src="assets/all_file_explorer.png" width="45%"></img> 
+</div>
 
 🐱‍💻 **Terminal (Kitty)**
-![Terminal](https://github.com/sathoru-dev/dotfiles/blob/main/assets/kitty.png?raw=true)
+<div align="center">
+<img src="assets/kitty.png" width="45%"></img> <img src="assets/all_kitty.png" width="45%"></img> 
+</div>
 
 💫 **Lanzador de aplicaciones (Rofi)**
-![Lanzador](https://github.com/sathoru-dev/dotfiles/blob/main/assets/rofi.png?raw=true)
+<div align="center">
+<img src="assets/rofi.png" width="30%"></img> <img src="assets/all_rofi.png" width="60%"></img> 
+</div>
+
 
 ✨ **Centro de Notificaciones (Swaync)**
-![Centro de control](https://github.com/sathoru-dev/dotfiles/blob/main/assets/swaync.png?raw=true)
+<div align="center">
+<img src="assets/swaync.png" width="20%"></img> <img src="assets/all_swaync.png" width="65%"></img> 
+</div>
 
 🌃 **Barra de tareas (Waybar)**
-![Barra de tareas](https://github.com/sathoru-dev/dotfiles/blob/main/assets/waybar.png?raw=true)
+<div align="center">
+<img src="assets/waybar.png" width="100%"></img>
+</div>
 
 ## 🛠️ Instalacion
 
 ⚠️ **Importante:**
-
 Instalar todos los paquetes antes de realizar cualquier copia de configuraciones
 
 ⚙️ **Configuracion de terminal de comandos**
-
 Instalar los siguientes paquetes:
 - **git** (Sistema de control de versiones)
-- **yay** (helper de AUR) ℹ️ *Algunos paquetes solo estan disponibles en AUR* 
-- **ZSH** (Instalar)
+- **zsh** (intérprete de comandos)
 ```bash
-# Instalacion
-sudo pacman -S zsh
-# Cambiar el interprete por defecto a "zsh"
+sudo pacman -S git zsh
+```
+Cambiar la shell por defecto del usuario en el sistema 
+```bash
 chsh -s /bin/zsh
 ```
-
+- **yay** (helper de AUR) *Algunos paquetes solo estan disponibles en AUR* 
+```bash
+sudo pacman -S --needed base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+```
 **🔃 Reinicia el equipo**
-
--  **Oh My ZSH** (Instalar)
+-  **Oh My ZSH** (Framework para gestionar la configuraciones de ZSH)
 
     - **Plugins de zsh**
         - zsh-autosuggestions
@@ -70,125 +98,17 @@ chsh -s /bin/zsh
     alias purge="sudo pacman -Rns"
     ```
 
+🧰 **Paquetes a instalar (Importantes para la personalizacion)**
+
+```bash
+    install chafa gnome-tweaks swww hyprlock neofetch rofi-wayland nemo cinnamon-translations waybar ttf-jetbrains-mono-nerd swaync zenity bc eog gnome-system-monitor evince openrgb xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
+```
+```bash
+    aur_install wlogout hyprshot cava visual-studio-code-bin python-pywal16 mpvpaper
+```
+
 🧰 **Paquetes a instalar**
 
-- **Navegador**
-    ```bash
-    install firefox
-    ```
-
-- **Mostrar imagenes en la terminal**
-    ```bash
-    install chafa
-    ```
-
-- **Utilidad de tema, fuente e iconos de GTK**
-    ```bash
-    install gnome-tweaks
-    ```
-
-- **Fondo de pantalla**
-    ```bash
-    install swww
-    ```
-
-- **Bloqueo de pantalla**
-    ```bash
-    install hyprlock
-    ```
-
-- **Opciones de apagado**
-    ```bash
-    aur_install wlogout
-    ```
-
-- **Informacion de sistema en terminal**
-    ```bash
-    install neofetch
-    ```
-
-- **Paleta de colores basada en el fonde de pantalla**
-    ```bash
-    aur_install python-pywal16
-    ```
-
-- **Lanzador de aplicaciones**
-    ```bash
-    install rofi-wayland
-    ```
-
-- **Explorador de archivos**
-    ```bash
-    install nemo
-    ```
-
-- **Traduccion a español del gestor de archivos**
-    ```bash
-    install cinnamon-translations
-    ```
-
-- **Barra de tareas**
-    ```bash
-    install waybar
-    ```
-
-    - **Fuente de iconos**
-        ```bash
-        install ttf-jetbrains-mono-nerd
-        ```
-
-- **Centro de notificaciones**
-
-    **Nota:** Eliminar cualquier demonio de notificaciones existente
-
-    ```bash
-    install swaync
-    ```
-
-- **Cuadros de dialogos**
-    ```bash
-    install zenity
-    ```
-
-- **Realizar captura de pantallas**
-    ```bash
-    aur_install hyprshot
-    ```
-
-- **Visualizador de audio**
-    ```bash
-    aur_install cava
-    ```
-
-- **Paquete para numeros de presicion**
-    ```bash
-    install bc
-    ```
-
-- **Visualizador de imagenes**
-    ```bash
-    install eog
-    ```
-
-- **Monitor de sistema**
-    ```bash
-    install gnome-system-monitor
-    ```
-
-- **Visualizador de PDF**
-    ```bash
-    install evince
-    ```
-
-- **Editor de codigo**
-    ```bash
-    aur_install visual-studio-code-bin
-    ```
-
-- **Colores de ram y dispositivos compatibles con rgb**
-    ```bash
-    install openrgb
-    ```
 
 - **Musica**
     ```bash
@@ -202,20 +122,15 @@ chsh -s /bin/zsh
 - 🗚 **Fuente:** *Century Gothic*
 - 🖱️ **Mouse:** *Anya-cursor-v3*
 
-⚠️ **Para que los temas se muestren correctamente debes instalar lo siguiente**
+
+
+📄 **Fuentes adicionales (Japones)**
+
 ```bash
-install xdg-desktop-portal-hyprland
-install xdg-desktop-portal-gtk
+install noto-fonts-cjk
+install noto-fonts-emoji
+install noto-fonts
 ```
-
-📄 **Fuentes adicionales**
-
-- **Fuentes Japonesas**
-    ```bash
-    install noto-fonts-cjk
-    install noto-fonts-emoji
-    install noto-fonts
-    ```
 
 ## ✅ Pasos finales
 
@@ -228,6 +143,13 @@ Copia todos los archivos que se encuentran dentro de _".config"_ a este mismo di
     - En tu directorio _".cache"_ debes crear los siguientes directorios:
         - **hyprlock** Aqui se guarda la configuracion del fondo de pantalla de bloqueo
         - **albumart** Directorio donde se almacenan las imagenes de las portadas de las canciones en reproduccion
+        - **liveWallpaper** Directorio dobde se almacena el fondo de pantalla animado
+
+## ⚠️ Primer arranque
+Debes iniciar los colores de pywal para no generar errores al momento de reiniciar el equipo
+```bash
+wal --cols16 -i "ruta_absoluta_de_tu_imagen"
+```
 
 ## 🔒 Fondo de SDDM
 El Script de fondos de pantalla integrado permite cambiar el fondo de pantalla de sddm de forma dinamica y facil

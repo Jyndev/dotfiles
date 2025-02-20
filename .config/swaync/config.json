@@ -42,7 +42,7 @@
 			  },
 			  {
 				"active": false,
-				"command": "sh -c ~/.config/scripts/swaync/wallpaper_util.sh &",
+				"command": "sh -c ~/.config/scripts/wallpapers/change_wallpaper.sh &",
 				"label": "󱇣",
 				"type": "button"
 			  },
