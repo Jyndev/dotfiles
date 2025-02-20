@@ -14,9 +14,6 @@
 
 En este repositorio se ponen a disposición del público en general todos los scripts y archivos de configuración de mi sistema operativo actual. Ten en cuenta que estoy comenzando en este tema, por lo que la instalación podría resultar un poco confusa.
 
-**&searr;&nbsp;&nbsp;Sigueme en mis redes sociales;&nbsp;&swarr;**
-[![Share on TikTok][image_tiktok]][link_tiktok]
-
 <a href="https://gowebly.org" target="_blank" title="Go to the Gowebly CLI website"><img width="99%" alt="gowebly create command" src="https://raw.githubusercontent.com/gowebly/.github/main/images/gowebly_create.gif"></a>
 
 ## 🖼️ Resultados
