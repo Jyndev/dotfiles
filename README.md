@@ -112,7 +112,7 @@ sudo pacman -S --needed base-devel && git clone https://aur.archlinux.org/yay.gi
     ```
 ## 🎨 Temas y personalizacion
 
-- 🏙️ **Iconos:** *Magna-Dark-Icons*
+- 🏙️ **Iconos:** *Fluent icon theme*
 - 🖍️ **Tema:** *Lavanda-gtk-theme*
 - 🗚 **Fuente:** *Century Gothic*
 - 🖱️ **Mouse:** *Anya-cursor-v3*
