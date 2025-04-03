@@ -1,22 +1,17 @@
-<a href="https://aimeos.org/">
+<a href="#">
     <img src="assets/jynprofile.png" alt="Aimeos logo" title="JynDev" align="right" height="60" />
 </a>
 
 # JynDev - Dotfiles 🚀
+## Mi Configuración - Disponible para Todos 👨🏻‍💻🛠️
 
-<div align="center">
+Este repositorio contiene mis dotfiles y configuraciones para Arch Linux con Hyprland. Como aún estoy aprendiendo, la instalación podría ser algo confusa, pero he intentado hacerla lo más clara posible.
 
-<a href="https://gowebly.org" target="_blank" title="Logo hyprland"><img alt="logo hyprland" src="https://raw.githubusercontent.com/hyprwm/Hyprland/main/assets/header.svg"></a>
+### 📢 Sígueme en Redes Sociales
 
-<a name="readme-top"></a>
+---
 
-# Mi configuración disponible para todos 👨🏻‍💻​🛠️​
-
-En este repositorio se ponen a disposición del público en general todos los scripts y archivos de configuración de mi sistema operativo actual. Ten en cuenta que estoy comenzando en este tema, por lo que la instalación podría resultar un poco confusa.
-
-## 🖼️ Resultados
-</div>
-
+## 🖼️ Capturas de Pantalla
 🌟 **Escritorio**
 <div align="center">
 <img src="assets/dk.png" width="45%"></img> <img src="assets/dk1.png" width="45%"></img> 
@@ -48,78 +43,77 @@ En este repositorio se ponen a disposición del público en general todos los sc
 <div align="center">
 <img src="assets/waybar.png" width="100%"></img>
 </div>
+---
 
-## 🛠️ Instalacion
+## 🛠️ Instalación
 
-⚠️ **Importante:**
-Instalar todos los paquetes antes de realizar cualquier copia de configuraciones
+### ⚠️ Importante:
 
-⚙️ **Configuracion de terminal de comandos**
-Instalar los siguientes paquetes:
-- **git** (Sistema de control de versiones)
-- **zsh** (intérprete de comandos)
-```bash
-sudo pacman -S git zsh
-```
-Cambiar la shell por defecto del usuario en el sistema 
-```bash
-chsh -s /bin/zsh
-```
-- **yay** (helper de AUR) *Algunos paquetes solo estan disponibles en AUR* 
-```bash
-sudo pacman -S --needed base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-```
-**🔃 Reinicia el equipo**
--  **Oh My ZSH** (Framework para gestionar la configuraciones de ZSH)
+Antes de copiar los archivos de configuración, instala los paquetes necesarios.
 
-    - **Plugins de zsh**
-        - zsh-autosuggestions
-        - zsh-syntax-highlighting
-        - zsh-history-substring-search
+### ⚙️ Configuración de la Terminal
 
-    Despues de instalados agregalos en el archivo de configuracion ".zshrc" que esta en el directorio "home"
+1. Instalar los siguientes paquetes básicos:
+   ```bash
+   sudo pacman -S git zsh
+   ```
+2. Cambiar la shell por defecto:
+   ```bash
+   chsh -s /bin/zsh
+   ```
+3. Instalar **yay** (gestor de paquetes AUR):
+   ```bash
+   sudo pacman -S --needed base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+   ```
+4. **🔃 Reinicia el sistema**
+5. Instalar **Oh My ZSH** y configurar plugins:
+   - **Plugins recomendados:**
+     - `zsh-autosuggestions`
+     - `zsh-syntax-highlighting`
+     - `zsh-history-substring-search`
+   - Edita el archivo `~/.zshrc` para agregarlos.
+6. Instalar **Powerlevel10k** para mejorar el estilo de la terminal.
 
-- **Power level 10k**
+### 🏎️ Alias Útiles para `.zshrc`
 
-    Para darle mas vida y estilo a la terminal puedes descargar este pequeño paquete
-
-- **Alias de comandos**
-
-    Para optimizar tiempo, puedes agregar los siguietes alias en el archivo de configuracion *.zshrc*
-    ```sh
-    alias install="sudo pacman -S"
-    alias aur_install="yay -S"
-    alias update="sudo pacman -Syu"
-    alias purge="sudo pacman -Rns"
-    ```
-
-🧰 **Paquetes a instalar (Importantes para la personalizacion)**
-
-```bash
-    install chafa gnome-tweaks swww hyprlock neofetch rofi-wayland nemo cinnamon-translations waybar ttf-jetbrains-mono-nerd swaync zenity bc eog gnome-system-monitor evince openrgb xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
-```
-```bash
-    aur_install wlogout hyprshot cava visual-studio-code-bin python-pywal16 mpvpaper
+```sh
+alias install="sudo pacman -S"
+alias aur_install="yay -S"
+alias update="sudo pacman -Syu"
+alias purge="sudo pacman -Rns"
 ```
 
-🧰 **Paquetes a instalar**
+---
 
+## 🧰 Paquetes para Personalización
 
-- **Musica**
-    ```bash
-    aur_install spotify #Instalas e inicias sesion
-    aur_install spotify-adblock #Eliminar publicidad
-    ```
-## 🎨 Temas y personalizacion
+```bash
+install chafa gnome-tweaks swww hyprlock neofetch rofi-wayland nemo cinnamon-translations \
+waybar ttf-jetbrains-mono-nerd swaync zenity bc eog gnome-system-monitor evince openrgb \
+xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
+```
 
-- 🏙️ **Iconos:** *Fluent icon theme*
-- 🖍️ **Tema:** *Lavanda-gtk-theme*
-- 🗚 **Fuente:** *Century Gothic*
-- 🖱️ **Mouse:** *Anya-cursor-v3*
+```bash
+aur_install wlogout hyprshot cava visual-studio-code-bin python-pywal16 mpvpaper
+```
 
+### 🎵 Música
 
+```bash
+aur_install spotify # Instalar e iniciar sesión
+aur_install spotify-adblock # Bloquear publicidad
+```
 
-📄 **Fuentes adicionales (Japones)**
+---
+
+## 🎨 Temas y Personalización
+
+- 🏙️ **Iconos:** `Magna-Dark-Icons`
+- 🖍️ **Tema GTK:** `Lavanda-gtk-theme`
+- 🗚 **Fuente:** `Century Gothic`
+- 🖱️ **Cursor:** `Anya-cursor-v3`
+
+### 📄 Fuentes Adicionales (Japonés)
 
 ```bash
 install noto-fonts-cjk
@@ -127,51 +121,67 @@ install noto-fonts-emoji
 install noto-fonts
 ```
 
-## ✅ Pasos finales
+---
 
-Copia todos los archivos que se encuentran dentro de _".config"_ a este mismo directorio dentro de tu carpeta _"home"_
+## ✅ Pasos Finales
 
-- **NOTA:** Es muy probable que tengas errores, esto debido a que tienes que ir depurando y corrigiendo rutas dentro de los archivos cambiando solo algunas partes con el nombre de tu usurio
+1. Copia los archivos de `.config` a tu directorio `~/.config`.
+2. Crea los siguientes directorios en `~/.cache/`:
+   - `hyprlock` (Fondo de pantalla de bloqueo)
+   - `albumart` (Imágenes de las canciones en reproducción)
+   - `liveWallpaper` (Fondos de pantalla animados)
 
-- **Directorios que debes crear:**
+---
 
-    - En tu directorio _".cache"_ debes crear los siguientes directorios:
-        - **hyprlock** Aqui se guarda la configuracion del fondo de pantalla de bloqueo
-        - **albumart** Directorio donde se almacenan las imagenes de las portadas de las canciones en reproduccion
-        - **liveWallpaper** Directorio dobde se almacena el fondo de pantalla animado
+## ⚠️ Primer Arranque
 
-## ⚠️ Primer arranque
-Debes iniciar los colores de pywal para no generar errores al momento de reiniciar el equipo
+Debes inicializar los colores de **pywal** para evitar errores al reiniciar:
+
 ```bash
 wal --cols16 -i "ruta_absoluta_de_tu_imagen"
 ```
 
-## 🔒 Fondo de SDDM
-El Script de fondos de pantalla integrado permite cambiar el fondo de pantalla de sddm de forma dinamica y facil
+---
 
-Si no esta configurado todo de una forma correcta se mostrara un error para asegurar la integridad
+## 🔒 Fondo de Pantalla en SDDM
 
-- **Tema actual: sddm-astronaut-theme**
+El script de fondos de pantalla cambia dinámicamente el fondo de **SDDM**.
 
-Como primer paso debes acceder a la ruta donde tienes el tema justo en el directorio donde estan los fondos,
-**en mi caso es: _/usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds_**
+### Configuración
 
-- **Damos permisos totales al directorio donde almacenaremos los archivos**
-    ```bash
-    sudo chmod 777 /usr/local/etc
-    ```
-- **Creamos el directorio dedicado a SDDM**
-    ```bash
-    mkdir /usr/local/etc/sddm
-    ```
-- **Comando para crear el enlace simbolico**
-    ```bash
-    sudo ln -s /usr/local/etc/sddm/sddm_background /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/background
-    ```
-- En la configuracion del tema debemos modificar la linea donde se encuentra definido el fondo, en mi caso es:
-    ```bash
-    # "Background es el enlace simbolico creado anteriormente"
-    #################### Background ####################
-    Background="Backgrounds/background"
-    ```
-**Ejecuta el script de cambio de fondo de pantalla**
+1. Ubicación del tema actual: `/usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds`
+2. Otorga permisos al directorio de configuración:
+   ```bash
+   sudo chmod 777 /usr/local/etc
+   ```
+3. Crea el directorio para SDDM:
+   ```bash
+   mkdir /usr/local/etc/sddm
+   ```
+4. Crea el enlace simbólico:
+   ```bash
+   sudo ln -s /usr/local/etc/sddm/sddm_background \
+       /usr/share/sddm/themes/sddm-astronaut-theme/Backgrounds/background
+   ```
+5. Modifica la configuración del tema para usar el enlace simbólico:
+   ```ini
+   #################### Background ####################
+   Background="Backgrounds/background"
+   ```
+6. **Ejecuta el script para cambiar el fondo de pantalla.**
+
+---
+
+## 🌎 Configuración de Aplicaciones con Wayland
+
+Agrega estas opciones a los lanzadores de las aplicaciones para que reconozcan el tema GTK:
+
+```bash
+google-chrome-stable --ozone-platform=wayland
+code --enable-features=WaylandWindowDecorations --ozone-platform=wayland
+```
+
+---
+
+¡Listo! Ahora tu sistema debería estar completamente personalizado. 🚀
+
